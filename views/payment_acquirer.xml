@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="payment_acquirer_form">
+        <field name="name">payment_acquirer.form</field>
+        <field name="model">payment.acquirer</field>
+        <field name="inherit_id" ref="payment.acquirer_form"/>
+        <field name="arch" type="xml">
+        	<field name="provider" position="after">
+        		<field name="pricelist_ids" widget="many2many_checkboxes" />
+        	</field>
+        </field>
+    </record>
+</odoo>
